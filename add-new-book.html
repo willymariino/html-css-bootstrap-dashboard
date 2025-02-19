@@ -43,10 +43,7 @@
                             <a class="nav-link text-secondary">Help</a>
                         </li>
                     </ul>
-                    <form class="d-flex justify-content-end" data-bs-theme="light" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-white  border bg-white" type="submit">cerca</button>
-                    </form>
+
                 </div>
             </div>
         </nav>
@@ -90,25 +87,30 @@
                     <div class="col-6">
                         <!-- cognome autore -->
                         <div class="col-md-6 w-100">
-                            <label for="inputPassword4" class="form-label">Cognome Autore</label>
+                            <label for="inputPassword4" class="form-label text-start">Cognome Autore</label>
                             <input type="text" placeholder="inserisci il cognome dell'autore" class="form-control"
                                 id="inputPassword4">
                         </div>
                         <!-- cognome autore -->
+
                     </div>
 
                 </div>
 
-                <!-- inserisci titolo autore -->
+                <!-- inserisci titolo  -->
                 <div class="col-12">
                     <label for="inputAddress" class="form-label d-flex justify-content-start pt-3">Titolo</label>
                     <input type="text" class="form-control" id="inputAddress"
                         placeholder="inserisci il titolo del libro">
                     <p class="text-start pt-1 text-secondary">titolo versione italiana</p>
                 </div>
-                <!-- inserisci titolo autore -->
+                <!-- inserisci titolo  -->
 
 
+                <!--/////////////// terza riga  Genere - Anno di pubblicazione - ISBN /////////////////////////-->
+
+
+                <!-- selettore genere -->
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">Genere</label>
                     <select id="inputState" class="form-select">
@@ -121,19 +123,38 @@
                         <option> non fiction </option>
                     </select>
                 </div>
+                <!-- selettore genere -->
 
 
+                <!-- info box anno di pubblicazione  -->
                 <div class="col-md-4">
                     <label for="inputCity" class="form-label">Anno di pubblicazione</label>
                     <input type="text" placeholder="inserisci l'anno" class="form-control" id="inputCity">
                 </div>
+                <!-- info box anno di pubblicazione  -->
 
-
-
+                <!-- info box ISBN  -->
                 <div class="col-md-4">
                     <label for="inputZip" class="form-label">ISBN#</label>
                     <input type="text" placeholder="Inserisci il codice ISBN#" class="form-control" id="inputZip">
                 </div>
+                <!-- info box ISBN  -->
+
+
+                <!--/////////////// terza riga Genere - Anno di pubblicazione - ISBN /////////////////////////-->
+
+                <hr class="w-60 mt-5">
+
+                <!-- note sul libro -->
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                    <textarea class="form-control" placeholder="inserisci eventuali note sul libro"
+                        id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+
+                <!-- note sul libro -->
 
                 <div class="col-12">
                     <div class="form-check">
