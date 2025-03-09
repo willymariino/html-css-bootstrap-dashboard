@@ -19,3 +19,12 @@ themeToggle.addEventListener("click", function () {
         localStorage.setItem("theme", "light");
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbar = document.querySelector(".navbar");
+
+    navbarToggler.addEventListener("click", function () {
+        navbar.classList.toggle("expanded");
+    });
+});

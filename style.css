@@ -24,3 +24,42 @@
 .dark-mode #send-task:hover {
     background-color: #444;
 }
+
+
+/* Effetto di transizione per la navbar */
+.navbar-collapse {
+    transition: all 0.4s ease-in-out;
+}
+
+/* Effetto di fade-in quando la navbar si espande */
+.navbar-collapse.show {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animazione di fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Effetto di animazione sull'icona del toggle */
+.navbar-toggler {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler:focus {
+    transform: rotate(90deg);
+}
+
+/* Cambia colore del background quando la navbar è aperta */
+.navbar.expanded {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.3s ease-in-out;
+}
