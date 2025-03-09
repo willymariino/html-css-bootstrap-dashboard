@@ -28,3 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
         navbar.classList.toggle("expanded");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbar = document.querySelector(".navbar");
+
+    navbarToggler.addEventListener("click", function () {
+        navbar.classList.toggle("expanded");
+    });
+});
